@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body> 
+    <div id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="email-input">Email:</label>
+            <input type="email" name="email" id="email-input">
+            <br><br>
+
+            <label for="password-input">Password:</label>
+            <input type="password" name="password" id="password-input">
+            <br><br>
+            
+            <button type="submit" id="login-btn">Login</button>
+            <p id="login-message"></p>
+        </form>
+    </div>
+
+    <div id="quiz-setup-section" hidden>
+        <h2>Quiz Setup</h2>
+        <form id="quiz-setup-form">
+            <label for="num-questions-input">Number of Questions (1-5):</label>
+            <input type="number" name="num-questions" id="num-questions-input" min="1" max="5">
+            <br><br>
+
+            <button type="submit" id="start-quiz-btn">Start Quiz</button>
+            <p id="setup-message"></p>
+        </form>
+    </div>
+
+    <div id="quiz-section" hidden>
+        <h2>Quiz</h2>
+        <div id="questions-container"></div>
+        <button id="submit-quiz-btn">Submit Quiz</button>
+    </div>
+
+    <div id="results-section" hidden>
+        <h2>Results</h2>
+        <div id="results-container"></div>
+        <hr>
+        <h3 id="score-display"></h3>
+        <p id="score-feedback"></p>
+        <button id="play-again-btn">Play Again</button>
+    </div>
+
+    <div id="locked-section" hidden>
+        <h2>Account Locked</h2>
+        <p>Your account has been locked due to too many failed login attempts.</p>
+    </div>
+
+    <script type="module" src="dist/script.js"></script>
+</body>
+</html>
